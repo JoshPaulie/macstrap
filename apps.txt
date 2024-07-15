@@ -18,6 +18,7 @@ pipx
 qemu
 fd
 neovim
+stow
 
 # MacOS
 rectangle
