@@ -1,0 +1,26 @@
+# Browser
+arc
+
+# Social / Personal
+discord
+obsidian
+
+# Games
+runelite
+
+# Dev / tools
+git
+visual-studio-code
+exa
+bat
+pipx
+qemu
+fd
+
+# MacOS
+rectangle
+iterm2
+easy-move-plus-resize
+caffeine
+battery
+starship
