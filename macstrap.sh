@@ -9,8 +9,8 @@ NC='\033[0m'
 
 # Error handling function
 handle_error() {
-    echo "${RED}Error: $1${NC}"
-    exit 1
+	echo "${RED}Error: $1${NC}"
+	exit 1
 }
 
 # Header
@@ -26,10 +26,13 @@ echo
 
 # Ensure Homebrew.sh install (package manager)
 if ! command -v brew &> /dev/null; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/bex/.zprofile
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 else
-    echo "${GREEN}Homebrew is already installed"
+	echo "${GREEN}Homebrew is already installed"
 fi
+
 
 # Install daily software
 grep -vE '^\s*#|^\s*$' apps.txt | xargs -I {} brew install {}
