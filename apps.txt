@@ -10,12 +10,14 @@ runelite
 
 # Dev / tools
 git
+gh
 visual-studio-code
 exa
 bat
 pipx
 qemu
 fd
+neovim
 
 # MacOS
 rectangle
