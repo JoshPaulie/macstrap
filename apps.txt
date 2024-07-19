@@ -12,13 +12,15 @@ runelite
 git
 gh
 visual-studio-code
-exa
+eza
 bat
+ripgrep
 pipx
 qemu
 fd
 neovim
 stow
+fastfetch
 
 # MacOS
 rectangle
