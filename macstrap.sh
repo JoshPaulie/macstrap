@@ -35,5 +35,7 @@ fi
 
 
 # Install daily software
-grep -vE '^\s*#|^\s*$' apps.txt | xargs -I {} brew install {}
+# grep	:: removes comments, blank lines
+# tr	:: flattens list
+brew install $(grep -vE '^\s*#|^\s*$' apps.txt | tr '\n' ' ')
 
