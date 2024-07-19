@@ -20,9 +20,6 @@ defaults write com.apple.dock "tilesize" -int "54"
 defaults write com.apple.dock "show-recents" -bool "false"
 killall dock
 
-# Mouse (requires restart)
-defaults write NSGlobalDomain com.apple.mouse.linear -bool "true" # Mouse acceleration: disabled
-
 # Keyboard
 # The following 2 greatly speedup the rate of which keys repeat (when holding down on keyboard)
 defaults write NSGlobalDomain "KeyRepeat" -int "2"
