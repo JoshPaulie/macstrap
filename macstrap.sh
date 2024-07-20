@@ -7,11 +7,16 @@ YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-# Error handling function
-handle_error() {
+
+error_msg() {
 	echo "${RED}Error: $1${NC}"
 	exit 1
 }
+
+info_msg() {
+	echo "${BLUE}$1{$NC}: $2"
+}
+
 
 # Header
 echo
@@ -36,6 +41,9 @@ fi
 
 # Install daily software
 # grep	:: removes comments, blank lines
-# tr	:: flattens list
+# tr	:: flattens lines into single line
 brew install $(grep -vE '^\s*#|^\s*$' apps.txt | tr '\n' ' ')
 
+# Set system settings
+info_msg "Setting" "system prefrences"
+. ./os-prefrences.sh
