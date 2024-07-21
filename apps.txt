@@ -21,10 +21,10 @@ fd
 neovim
 stow
 fastfetch
+alacritty
 
 # MacOS
 rectangle
-iterm2
 easy-move-plus-resize
 caffeine
 battery
