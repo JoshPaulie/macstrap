@@ -8,6 +8,9 @@ obsidian
 # Games
 runelite
 
+# Fonts
+font-fira-code-nerd-font
+
 # Dev / tools
 git
 gh
@@ -22,10 +25,10 @@ neovim
 stow
 fastfetch
 alacritty
+starship
 
-# MacOS
+# MacOS-specific
 rectangle
 easy-move-plus-resize
 caffeine
 battery
-starship
