@@ -26,9 +26,15 @@ stow
 fastfetch
 alacritty
 starship
+yt-dlp
 
 # MacOS-specific
 rectangle
 easy-move-plus-resize
 caffeine
 battery
+
+# Zsh plugins
+zsh-syntax-highlighting
+zsh-vi-mode
+zsh-autosuggestions
