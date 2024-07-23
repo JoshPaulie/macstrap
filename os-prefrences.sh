@@ -28,3 +28,5 @@ defaults write NSGlobalDomain "InitialKeyRepeat" -int "25"
 # Accessibility
 defaults write com.apple.universalaccess "reduceMotion" -bool "true"
 
+# Enable battery percentage
+defaults write $HOME/Library/Preferences/ByHost/com.apple.controlcenter.plist "BatteryShowPercentage" -bool "true"
