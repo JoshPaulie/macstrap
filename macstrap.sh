@@ -47,3 +47,9 @@ brew install $(grep -vE '^\s*#|^\s*$' apps.txt | tr '\n' ' ')
 # Set system settings
 info_msg "Setting" "system prefrences"
 . ./os-prefrences.sh
+
+# Setup dotfiles
+info_msg "Fetching and stowing" "dotfiles"
+. ./dotfiles.sh
+
+
