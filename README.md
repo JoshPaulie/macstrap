@@ -4,7 +4,7 @@ basic sh scripts to configure new (personal) macs
 - ensures homebrew
 - installs all favorite apps
 - sets many system settings
-- _todo_ setup dotfiles
+- setup dotfiles
 - _todo_ configure themes for variaus tools
 
 ## Install
@@ -31,3 +31,4 @@ Gone are the days of authenticating your GitHub account with just git. Sign in a
 
 ### Remapping Capslock
 One must manually change the capslock key to another within the system settings
+
