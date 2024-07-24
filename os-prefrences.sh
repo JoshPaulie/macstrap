@@ -11,14 +11,12 @@ defaults write NSGlobalDomain "AppleInterfaceStyle" -string "Dark" # Appearance:
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 defaults write com.apple.finder "ShowPathbar" -bool "true"
 defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv" # View style to "List"
-killall Finder
 
 # Dock
 defaults write com.apple.dock "mineffect" -string "scale"
 defaults write com.apple.dock "autohide" -bool "true"
 defaults write com.apple.dock "tilesize" -int "54"
 defaults write com.apple.dock "show-recents" -bool "false"
-killall dock
 
 # Keyboard
 # The following 2 greatly speedup the rate of which keys repeat (when holding down on keyboard)
@@ -26,7 +24,18 @@ defaults write NSGlobalDomain "KeyRepeat" -int "2"
 defaults write NSGlobalDomain "InitialKeyRepeat" -int "25"
 
 # Accessibility
-defaults write com.apple.universalaccess "reduceMotion" -bool "true"
+sudo defaults write com.apple.universalaccess "reduceMotion" -bool "true"
 
 # Enable battery percentage
 defaults write $HOME/Library/Preferences/ByHost/com.apple.controlcenter.plist "BatteryShowPercentage" -bool "true"
+
+# Auto-nonsense
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false # No auto caps
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false # No auto dashes
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false # No auto periods
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false # No "smart" quotes
+
+# Screenshots
+defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture disable-shadow -bool true
+
